@@ -7,7 +7,7 @@ from sklearn.ensemble import RandomForestRegressor
 from prediction import get_prediction
 from keras.models import load_model
 
-model = load_model(r'../Model/CyberBully_DL_Model.h5')
+model = load_model(r'Model/CyberBully_DL_Model.h5')
 
 st.set_page_config(page_title="CyberBully Sentiment Prediction",
                    page_icon="🚧", layout="wide")

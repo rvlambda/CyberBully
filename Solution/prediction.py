@@ -57,9 +57,9 @@ def get_prediction(data,model):
     Predict the class of a given data point.
     """
     result = 0.0
-    vocab = read__vocab_list("../Model/vocab.txt")
+    vocab = read__vocab_list("Model/vocab.txt")
     vocab = vocab.split("\n")
-    Tokenizer = pickle.load(open("../Model/token.pickle","rb"))
+    Tokenizer = pickle.load(open("Model/token.pickle","rb"))
     result = predict_sentiment(data,vocab,Tokenizer,256,model)
     #if result > 0.5:
     #    result = 1.0
