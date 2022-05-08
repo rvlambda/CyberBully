@@ -5,9 +5,10 @@ import keras
 import joblib
 from sklearn.ensemble import RandomForestRegressor
 from prediction import get_prediction
-from keras.models import load_model
+#from keras.models import load_model
+from load_model import get_model
 
-model = load_model(r'Model/CyberBully_DL_Model.h5')
+rf_model = get_model(model_path = r'Model/CyberBully_DL_Model.h5')
 
 st.set_page_config(page_title="CyberBully Sentiment Prediction",
                    page_icon="🚧", layout="wide")
